@@ -32,18 +32,14 @@ repositories {
     maven("https://oss.sonatype.org/content/repositories/snapshots")
     maven("https://oss.sonatype.org/content/repositories/central")
     maven(uri("https://papermc.io/repo/repository/maven-public/"))
-    maven(uri("https://repo.viaversion.com"))
     maven(uri("https://maven.plugily.xyz/releases"))
     maven(uri("https://maven.plugily.xyz/snapshots"))
     maven(uri("https://repo.citizensnpcs.co/"))
-    maven(uri("https://jitpack.io"))
     maven(uri("https://repo.maven.apache.org/maven2/"))
 }
 
 dependencies {
     implementation("plugily.projects:MiniGamesBox-Classic:1.3.13") { isTransitive = false }
-    compileOnly("com.viaversion:viaversion-api:5.0.3")
-    compileOnly("com.github.ProtocolSupport:ProtocolSupport:master")
     compileOnly("org.spigotmc:spigot-api:1.20.4-R0.1-SNAPSHOT")
     compileOnly("io.papermc.paper:paper-api:1.20.4-R0.1-SNAPSHOT")
     compileOnly("net.citizensnpcs:citizensapi:2.0.31-SNAPSHOT")
